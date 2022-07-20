@@ -10,7 +10,6 @@ export function ButtonLeft({ fufu }: ButtonProps) {
 				onClick={() => {
 					fufu((old) => {
 						if (old > 0) {
-							console.log("old" + old);
 							return old - 1;
 						} else {
 							return old;

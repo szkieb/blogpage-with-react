@@ -1,20 +1,13 @@
 import { Post } from "../assets/BlogPostDatabase";
 
-type example1 = Array<string>;
-type example2 = [string, string];
-type example3 = Record<string, string>;
-type example4 = { prop1: string; prop2: string };
-
 type BlogPostProps = { blogPost: Post };
 
-export function BlogPost(props: BlogPostProps) {
-	// const blogPost = props.blogPost
-	const { blogPost } = props;
+export function BlogPost({ blogPost }: BlogPostProps) {
 	return (
 		<>
 			<div
 				id="blog-content"
-				className="flex flex-col w-2/3 h-full p-2 bg-slate-200 shadow-md "
+				className="flex flex-col w-full h-full p-2 bg-slate-200 shadow-md whitespace-pre-line  "
 			>
 				<img
 					id="blogPostImage"
@@ -25,7 +18,7 @@ export function BlogPost(props: BlogPostProps) {
 				<h2 id="blogPostHeadline" className="font-bold my-2 text-xl ">
 					{blogPost.blogPostHeadline}
 				</h2>
-				<p id="blogPostText" className="overflow-scroll  h-full w-full ">
+				<p id="blogPostText" className="overflow-scroll  w-full ">
 					{blogPost.blogPostText}
 				</p>
 				{/* <div id="blogPostTags"></div> */}

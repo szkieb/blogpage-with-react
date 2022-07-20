@@ -3,7 +3,7 @@ export function Sidebar() {
 		<>
 			<div
 				id="sidebar"
-				className="m-6 py-4 px-2 w-1/3 max-w     h-fit shadow-sm border-2 border-slate-200  "
+				className="m-6 py-4 px-2 w-1/5 max-w h-fit shadow-sm border-2 border-slate-200  "
 			>
 				<p className="text-center">
 					<span className=" uppercase font-semibold">Bloggers Blog </span>
